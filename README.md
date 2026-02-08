@@ -1,2 +1,2 @@
-# cf-services-the-course-playground
+# Cloudflare Link Tracker Course
 

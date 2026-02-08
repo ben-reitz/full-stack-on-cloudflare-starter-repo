@@ -10,8 +10,8 @@
     "serve": "vite preview",
     "test": "vitest run",
     "cf-typegen": "wrangler types --env-interface Env --env stage",
-    "stage:deploy": "npm run build && wrangler deploy",
-    "production:deploy": "npm run build && wrangler deploy --env production"
+    "stage:deploy": "pnpm run build && wrangler deploy",
+    "production:deploy": "pnpm run build && wrangler deploy --env production"
   },
   "dependencies": {
     "@better-auth/stripe": "1.4.18",

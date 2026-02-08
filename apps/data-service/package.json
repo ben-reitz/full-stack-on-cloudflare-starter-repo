@@ -3,27 +3,29 @@
 	"version": "0.0.0",
 	"private": true,
 	"scripts": {
-		"deploy": "wrangler deploy",
+		"stage:deploy": "wrangler deploy --env stage",
+		"production:deploy": "wrangler deploy --env production",
 		"dev": "wrangler dev",
 		"start": "wrangler dev",
 		"test": "vitest",
-		"cf-typegen": "wrangler types --env-interface BaseEnv"
+		"cf-typegen": "wrangler types --env-interface BaseEnv --env stage"
 	},
 	"devDependencies": {
-		"@cloudflare/puppeteer": "^1.0.5",
+		"@cloudflare/puppeteer": "^1.0.6",
 		"@cloudflare/vitest-pool-workers": "^0.8.71",
 		"@types/node": "^22.19.7",
 		"typescript": "^5.9.3",
 		"vitest": "~3.2.4",
-		"wrangler": "^4.59.3"
+		"wrangler": "^4.63.0"
 	},
 	"dependencies": {
 		"@repo/data-ops": "workspace:*",
-		"ai": "^6.0.44",
-		"hono": "^4.11.4",
+		"ai": "^6.0.77",
+		"ai-gateway-provider": "^3.1.1",
+		"hono": "^4.11.8",
 		"moment": "^2.30.1",
 		"uuid": "^11.1.0",
-		"workers-ai-provider": "^3.0.2",
+		"workers-ai-provider": "^3.0.4",
 		"zod": "^3.25.76"
 	}
 }

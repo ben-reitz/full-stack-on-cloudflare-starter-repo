@@ -44,7 +44,6 @@
     "kysely-d1": "^0.4.0",
     "nanoid": "^5.1.6",
     "stripe": "^18.5.0",
-    "uuid": "^11.1.0",
     "zod": "^3.25.76"
   },
   "devDependencies": {

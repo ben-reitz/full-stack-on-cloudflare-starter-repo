@@ -28,8 +28,8 @@ export class EvaluationScheduler extends DurableObject<Env> {
 
 		const alarm = await this.ctx.storage.getAlarm();
 		if (!alarm) {
-			const oneDay = Date.now() + 24 * 60 * 60 * 1000;
-			await this.ctx.storage.setAlarm(oneDay);
+			const tenMinutes = Date.now() + 10 * 60 * 1000;
+			await this.ctx.storage.setAlarm(tenMinutes);
 		}
 	}
 

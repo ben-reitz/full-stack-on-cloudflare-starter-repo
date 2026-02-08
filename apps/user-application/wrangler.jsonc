@@ -16,6 +16,12 @@
   },
   "env": {
     "stage": {
+      "routes": [
+        {
+          "custom_domain": true,
+          "pattern": "stage.pine.gifts",
+        },
+      ],
       "d1_databases": [
         {
           "binding": "DB",
@@ -32,6 +38,12 @@
       ],
     },
     "production": {
+      "routes": [
+        {
+          "custom_domain": true,
+          "pattern": "pine.gifts"
+        },
+      ],
       "d1_databases": [
         {
           "binding": "DB",
